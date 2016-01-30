@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;OBJFileLoader.java&apos; to &apos;3DGame0_0_1/src/objConverter&apos;&#x0D;&#x0A;- Original project: &apos;3DGame0_0_1&apos;&#x0D;&#x0A;- Destination element: &apos;3DGame0_0_1/src/objConverter&apos;&#x0D;&#x0A;- Original element: &apos;objConverter.OBJFileLoader.java&apos;" description="Copy compilation unit" destination="/src&lt;objConverter" element1="/src&lt;objConverter{OBJFileLoader.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1453196920105" units="1" version="1.0"/>
+</session>

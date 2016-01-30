@@ -1,0 +1,15 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl human:suit01LRes:suit01
+Ns 194.117647
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.031370 0.031370 0.031370
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Bump textures\\suit01_normals.png
+map_Kd textures\\suit01lres_diffuse.png
+map_d textures\\suit01lres_diffuse.png

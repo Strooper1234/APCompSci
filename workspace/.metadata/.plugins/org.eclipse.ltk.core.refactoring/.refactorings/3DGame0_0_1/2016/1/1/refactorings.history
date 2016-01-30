@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;staticModel2&apos; in &apos;engineTester.MainGameLoop.main(...)&apos; to &apos;grass&apos;&#x0D;&#x0A;- Original project: &apos;3DGame0_0_1&apos;&#x0D;&#x0A;- Original element: &apos;engineTester.MainGameLoop.main(String[]).staticModel2&apos;&#x0D;&#x0A;- Renamed element: &apos;staticModel2&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;staticModel2&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;engineTester{MainGameLoop.java[MainGameLoop~main~\[QString;@staticModel2!1608!1718!1622!1633!QTexturedModel;!0!false" name="grass" references="true" stamp="1451725784544" version="1.0"/>
+</session>

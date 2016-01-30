@@ -1,0 +1,152 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Manager extends JPanel implements ActionListener {
+	
+	private final static int WIDTH = 900;
+	private final static int HEIGHT = 600;
+	
+	JButton allSongs;
+	JButton searchSong;
+	JButton searchArtist;
+	JButton searchAlbum;
+	
+	JTextField nameTX;
+	JTextField idTX;
+	JTextField subjectTX;
+	
+	String menu = "all";
+	
+	int x=0, y=0, width=0, height=0, increment = 0;// helps to set up things
+	
+	List<Song> songList = new ArrayList<Song>();
+	
+	public Manager(){
+		setLayout(null);
+		
+		allSongs = new JButton("Display All");
+		allSongs.setBounds(40,70,200,30);
+		allSongs.addActionListener(this);
+        add(allSongs);
+        
+        width = 200;
+        height = 30;
+        x = 40;
+        y = 200;
+        increment = 100;
+        
+        searchSong = new JButton("Search by song name");
+        searchSong.setBounds(x, y, width, height);
+        searchSong.addActionListener(this);
+        add(searchSong);
+        y += increment;
+        
+        searchArtist = new JButton("Search by Artist");
+        searchArtist.setBounds(x, y, width, height);
+        searchArtist.addActionListener(this);
+        add(searchArtist);
+        y += increment;
+        
+        searchAlbum = new JButton("Search by album");
+        searchAlbum.setBounds(x, y, width, height);
+        searchAlbum.addActionListener(this);
+        add(searchAlbum);
+        y += increment;
+        
+        
+        y = 170;
+        
+        
+        nameTX = new JTextField(50);
+        nameTX.setBounds(x, y, width, height);
+        add(nameTX);
+        y += increment;
+        
+        idTX = new JTextField(50);
+        idTX.setBounds(x, y, width, height);
+        add(idTX);
+        y += increment;
+        
+        subjectTX = new JTextField(50);
+        subjectTX.setBounds(x, y, width, height);
+        add(subjectTX);
+		
+        //add Songs
+		songList.add(new Song("Song1", "The Artist", "Origal"));
+		songList.add(new Song("Originals", "The Artist", "Original"));
+		songList.add(new Song("free liberty", "The Artist", "Original"));
+		songList.add(new Song("creativity", "The ignorants", "Original"));
+		songList.add(new Song("freedom", "The Artist", "Original"));
+		songList.add(new Song("opinion", "The Artist", "Original"));
+		songList.add(new Song("hehe", "The Artist", "Original"));
+		songList.add(new Song("keke", "The famous", "Original"));
+		songList.add(new Song("jaga", "The famous", "Original"));
+		songList.add(new Song("the", "The famous", "Original"));
+	}
+	
+	public Dimension getPreferredSize(){
+		return new Dimension(WIDTH,HEIGHT);
+	}
+	
+	public void paintComponent(Graphics g){
+		g.setColor(Color.white);
+		g.fillRect(0, 0, WIDTH, HEIGHT);
+		if(menu == "all"){
+			x = 450;
+			y = 30;
+			
+			
+			
+			for(int i=0; i<songList.size()-1;i++){
+				for(int j=i+1; j<songList.size()-1; j++){
+					
+					/*if(songList.get(i).getSong().compareTo(songList.get(j).getSong()) > 0) {
+						Song temp = songList.get(i);
+						songList.set(i, songList.get(j));
+						songList.set(j, temp);
+					}*/
+					
+					String song1 = songList.get(i).getSong();
+					String song2 = songList.get(j).getSong();
+					
+					if(song1.compareTo(song2) > 0) {
+						Song temp = songList.get(i);
+						songList.remove(i);
+						songList.add(songList.get(j));
+						songList.remove(j);
+						songList.add(temp);
+						System.out.println("passing through if statement");
+					}
+				}
+			}
+			for(Song each : songList){
+				each.drawMe(g, x, y);
+				y += 60;
+			}
+			
+		}
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == allSongs){
+			menu = "all";
+		}else if(e.getSource() == searchSong){
+			menu = "songSearch";
+		}else if(e.getSource() == searchArtist){
+			menu = "artistSearch";
+		}else if(e.getSource() == searchAlbum){
+			menu = "albumSearch";
+		}
+	}
+
+}

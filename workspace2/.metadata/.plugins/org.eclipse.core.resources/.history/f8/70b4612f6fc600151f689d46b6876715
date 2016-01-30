@@ -1,0 +1,18 @@
+import java.awt.Graphics;
+
+public class Song {
+	
+	String songName = "";
+	String artist = "";
+	String album = "";
+	
+	public Song(String songName, String artist, String album){
+		this.songName = songName;
+		this.artist = artist;
+		this.album = album;
+	}
+	
+	public void drawMe(Graphics g){
+		
+	}
+}

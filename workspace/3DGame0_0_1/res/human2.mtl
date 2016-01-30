@@ -1,0 +1,15 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl human:classic_shoes_lres:BrownClassicShoesMaterial
+Ns 398.039216
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.278400 0.278400 0.278400
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Bump textures\\classicshoes_texture_normals.png
+map_Kd textures\\classicshoes_texture_diffuse.png
+map_d textures\\classicshoes_texture_diffuse.png

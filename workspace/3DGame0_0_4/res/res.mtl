@@ -1,0 +1,66 @@
+# MakeHuman exported MTL
+# www.makehuman.org
+
+
+newmtl young_caucasian_male_sweat
+Kd 1 1 1
+Ks 0.2039 0.1725 0.1725
+d 0
+map_Kd textures\young_lightskinned_male_diffuse.png
+map_D textures\young_lightskinned_male_diffuse.png
+
+newmtl mhair02black
+Kd 1 1 1
+Ks 0.05098 0.05098 0.05098
+d 0
+map_Kd textures\male02_diffuse_black.png
+map_D textures\male02_diffuse_black.png
+
+newmtl Eyeblue
+Kd 1 1 1
+Ks 1 1 1
+d 0
+map_Kd textures\blue_eye.png
+map_D textures\blue_eye.png
+
+newmtl eyebrow011
+Kd 1 1 1
+Ks 0 0 0
+d 0
+map_Kd textures\eyebrow011.png
+map_D textures\eyebrow011.png
+
+newmtl bodyMaterial
+Kd 1 1 1
+Ks 0 0 0
+d 0
+map_Kd textures\eyelashes01.png
+map_D textures\eyelashes01.png
+
+newmtl teethMaterial
+Kd 0.64 0.64 0.64
+Ks 0.8549 0.8549 0.8549
+d 0
+map_Kd textures\teeth.png
+map_D textures\teeth.png
+
+newmtl tongue01Material
+Kd 1 1 1
+Ks 0.03137 0.03137 0.03137
+d 0
+map_Kd textures\tongue01_diffuse.png
+map_D textures\tongue01_diffuse.png
+
+newmtl suit01
+Kd 1 1 1
+Ks 0.03137 0.03137 0.03137
+d 0
+map_Kd textures\suit01lres_diffuse.png
+map_D textures\suit01lres_diffuse.png
+
+newmtl BrownClassicShoesMaterial
+Kd 1 1 1
+Ks 0.2784 0.2784 0.2784
+d 0
+map_Kd textures\classicshoes_texture_diffuse.png
+map_D textures\classicshoes_texture_diffuse.png

@@ -1,0 +1,30 @@
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+
+public class Song {
+	
+	String songName = "";
+	String artist = "";
+	String album = "";
+	
+	public Song(String songName, String artist, String album){
+		this.songName = songName;
+		this.artist = artist;
+		this.album = album;
+	}
+	
+	public void drawMe(Graphics g, int x, int y){
+		Font font = new Font("Arial", Font.PLAIN,10);
+		g.setColor(Color.black);
+		g.setFont(font);
+		g.drawString(songName + " " + artist + " " + album, x, y);
+	}
+	public String getArtist(){
+		return "hi";
+	}
+	
+	public String getAlbum(){
+		return "hi";
+	}
+}
